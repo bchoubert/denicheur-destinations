@@ -12,6 +12,7 @@ export default defineConfig({
     ui(),
     vueDevTools(),
   ],
+  base: '/denicheur-destinations/dist/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
