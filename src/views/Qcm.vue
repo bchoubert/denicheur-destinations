@@ -42,10 +42,10 @@ const currentQuestion = computed(() => {
 });
 
 const validateQuestion = (points: number) => {
+    nbPoints.value += points;
     
     if (indexQuestion.value < maxQuestion.value - 1) {
         setTimeout(() => {
-            nbPoints.value += points;
             indexQuestion.value += 1;
         }, Math.random() * 1500);
             
