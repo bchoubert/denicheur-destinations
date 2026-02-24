@@ -5,7 +5,7 @@ import Progress from '@/views/Progress.vue'
 import Result from '@/views/Result.vue'
 import Start from '@/views/Start.vue'
 import Interactive from '@/views/Interactive.vue'
-import Error from '@/views/Error.vue'
+import CalcErr from '@/views/CalcErr.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,9 +36,9 @@ const router = createRouter({
       component: Progress,
     },
     {
-      path: '/error',
-      name: 'error',
-      component: Error,
+      path: '/calcerr',
+      name: 'calcerr',
+      component: CalcErr,
     },
     {
       path: '/result',
@@ -46,6 +46,10 @@ const router = createRouter({
       component: Result,
     }
   ],
+})
+
+router.beforeEach((to, from) => {
+  console.log('[nav]', from.fullPath, '→', to.fullPath, 'state:', history.state)
 })
 
 export default router

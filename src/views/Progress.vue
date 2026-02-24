@@ -32,7 +32,7 @@ onMounted(() => {
 
         if (increment.value >= 97) {
             setTimeout(() => {
-                router.push('/error');
+                router.push('/calcerr');
             }, 2000);
         }
     }, 1000);
