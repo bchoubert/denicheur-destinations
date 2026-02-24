@@ -1,15 +1,16 @@
 <template>
+  <div class="relative w-full h-[100vh] overflow-scroll">
      <div class="snow">
-      <span 
-        v-for="flake in flakes" 
-        :key="flake.id"
-        class="flake"
-        :style="flake.style"
-      >
-        ❄
-      </span>
+        <span 
+          v-for="flake in flakes" 
+          :key="flake.id"
+          class="flake"
+          :style="flake.style"
+        >
+          ❄
+        </span>
     </div>
-    <div class="w-(--ui-container)">
+    <div class="w-(--ui-container) max-w-full">
         <ResultCity
             v-for="city of results"
             :key="city.city"
@@ -17,6 +18,7 @@
             :city="city"
         />
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">

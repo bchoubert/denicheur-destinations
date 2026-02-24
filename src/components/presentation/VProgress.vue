@@ -1,7 +1,7 @@
 <template>
     <div class="absolute right-4 h-[100vh] top-0 flex items-center">
         <div class="absolute z-2 right-0 transition-all" :style="styleTopHeight">
-            <Points />
+            <Points smaller />
         </div>
         <div class="h-[50vh] rotate-180">
             <UProgress orientation="vertical" :modelValue="value" />

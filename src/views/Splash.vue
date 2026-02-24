@@ -5,7 +5,7 @@
 
             <i class="flex-[1px] block h-[150px] w-[1px] bg-gray-500" />
 
-            <h1 class="text-7xl">Dénicheur de <br/>destinations</h1>
+            <h1 class="sm:text-7xl text-3xl">Dénicheur de <br/>destinations</h1>
         </div>
 
         <p>

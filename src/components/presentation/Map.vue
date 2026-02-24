@@ -1,5 +1,5 @@
 <template>
-    <div id="map" style="width: 50vw; height:50vh;" class="rounded-md"></div>
+    <div id="map" class="w-[80vw] h-[50vh] sm:w-[50vw] rounded-md"></div>
     <div class="relative top-[-4rem] z-500 w-full flex justify-center" >
         <div class="inline bg-orange-600 px-4 py-2 text-white rounded-sm">{{ coords.label }}</div>
     </div>

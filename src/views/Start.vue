@@ -9,7 +9,7 @@
         <UButton class="text-white" trailing-icon="i-lucide-chevron-right" @click="openQcm">Continuer</UButton>
     </div>
 
-    <UIcon name="i-lucide-arrow-right" class="text-orange-600 absolute top-[45%] right-10 text-6xl" />
+    <UIcon name="i-lucide-arrow-right" class="sm:visible invisible text-orange-600 absolute top-[45%] right-10 text-6xl" />
 
     <VProgress :value="randomValue" />
 </template>

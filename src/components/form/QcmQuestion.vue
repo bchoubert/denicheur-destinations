@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-8 w-150">
+    <div class="flex flex-col gap-8 w-150 max-w-full">
         <span class="mt-8 text-lg block">{{ question?.title }}</span>
         <URadioGroup v-model="selectedValue" color="primary" variant="table" indicator="end" :items="items" />
         <div class="flex justify-end">

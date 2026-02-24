@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-row">
-        <div class="flex-1 p-8">
+    <div class="sm:flex sm:flex-row">
+        <div class="sm:flex-1 p-8">
             <span class="block text-4xl">{{ city.dates }}</span>
             <span>{{ city.city }}</span>
         </div>
-        <div class="py-8 flex-4 flex flex-row gap-4">
+        <div class="py-8 sm:flex-4 sm:flex sm:flex-row gap-4">
             <div
                 v-for="photo of city.photos"
                 :key="photo.label"
@@ -12,7 +12,7 @@
             >
                 <img
                     class="h-30 w-full object-cover rounded-md"
-                    :src="photo.img"
+                    :src="`/denicheur-destinations/dist/${photo.img}`"
                 />
                 <span>{{ photo.label }}</span>
             </div>
